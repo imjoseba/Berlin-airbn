@@ -1,6 +1,6 @@
 # Data Analysis and Visualization Project
 
-![Cover Image](airbnb.jpg)
+![Berlin Image](https://www.laguiadeberlin.com/wp-content/uploads/2017/09/berlin-airbnb.jpg)
 
 
 Welcome to this data analysis and visualization project! In this repository, we have conducted an in-depth analysis of Airbnb data for a specific city. Our goal is to explore and gain insights from the data, and we have performed various data preprocessing, analysis, and visualization tasks.
