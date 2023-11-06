@@ -49,6 +49,8 @@ We scrape climatic data from Wikipedia to enrich our analysis with weather infor
 
 We export our cleaned and analyzed data into CSV format for use in data visualization tools like PowerBI.
 
+For an interactive data visualization using PowerBI, you can check out the [PowerBI report here](https://app.powerbi.com/view?r=eyJrIjoiNGMzOTk5NTEtMDRhNS00MWE2LWI2ZjUtYzQ3ZWI0ZGU2MGZmIiwidCI6IjhhZWJkZGI2LTM0MTgtNDNhMS1hMjU1LWI5NjQxODZlY2M2NCIsImMiOjl9).
+
 ## Conclusion
 
 This project aims to provide valuable insights into the Airbnb market in the city. We encourage you to explore the code and findings in our Jupyter notebooks and data visualizations in PowerBI.
@@ -57,5 +59,5 @@ Feel free to reach out if you have any questions or suggestions. We value your f
 
 Happy analyzing!
 
-- [Your Name]
+- [Joseba Moreno]
 Data Analyst
