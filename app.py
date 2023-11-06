@@ -3,16 +3,16 @@ import pandas as pd
 from pycaret.regression import load_model, predict_model
 
 model = load_model("ml_airbnb")
-st.title("Sistema de predicción de precios Upgrade-Hub")
+st.title("Vacation rental prediction system based on Airbnb dataset")
 
-neighbourhood = st.selectbox('Barrio', options=[
+neighbourhood = st.selectbox('Neighbourhood', options=[
     'Pankow', 'Friedrichshain-Kreuzberg', 'Neukölln',
     'Charlottenburg-Wilm.', 'Tempelhof - Schöneberg', 'Mitte',
     'Treptow - Köpenick', 'Marzahn - Hellersdorf',
     'Steglitz - Zehlendorf', 'Spandau', 'Lichtenberg', 'Reinickendorf'
 ])
 
-property_type = st.selectbox('Tipo de Propiedad', options=[
+property_type = st.selectbox('Property type', options=[
     'Entire rental unit', 'Entire loft', 'Private room in rental unit',
     'Entire condo', 'Entire guest suite', 'Entire home',
     'Entire townhouse', 'Private room in condo',
@@ -42,10 +42,10 @@ property_type = st.selectbox('Tipo de Propiedad', options=[
     'Shared room in tiny home'
 ])
 
-accommodates = st.slider('Número de Personas', min_value=1, max_value=17, value=1)
-room_type = st.selectbox('Tipo de Habitación', options=['Entire home/apt', 'Private room', 'Shared room', 'Hotel room'])
-maximum_nights = st.slider('Noches Máximas', min_value=1, max_value=100, value=1)
-minimum_nights = st.slider('Noches Mínimas', min_value=1, max_value=10, value=1)
+accommodates = st.slider('Accommodates', min_value=1, max_value=16, value=1)
+room_type = st.selectbox('Room type', options=['Entire home/apt', 'Private room', 'Shared room', 'Hotel room'])
+maximum_nights = st.slider('Maximum nights', min_value=1, max_value=100, value=1)
+minimum_nights = st.slider('Minimum nights', min_value=1, max_value=10, value=1)
 
 input_data = pd.DataFrame([[
     neighbourhood, property_type, accommodates, room_type,
@@ -53,6 +53,6 @@ input_data = pd.DataFrame([[
 ]], columns=['neighbourhood_group', 'property_type', 'accommodates', 'room_type', 'maximum_nights', 'minimum_nights'])
 
 
-if st.button('¡Descubre el precio!'):
+if st.button('Discover the price!'):
     prediction = predict_model(model, data=input_data)
     st.write(str(prediction["prediction_label"].values[0]) + '€')
