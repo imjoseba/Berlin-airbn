@@ -3490,3 +3490,13 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
                 ('actual_estimator',
                  LGBMRegressor(n_jobs=-1, random_state=4527))])
 2023-11-06 16:19:45,847:INFO:finalize_model() successfully completed......................................
+2023-11-07 10:27:24,066:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-07 10:27:24,067:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-07 10:27:24,067:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-07 10:27:24,067:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-11-07 10:27:24,328:INFO:Initializing load_model()
+2023-11-07 10:27:24,328:INFO:load_model(model_name=ml_airbnb, platform=None, authentication=None, verbose=True)
