@@ -38,7 +38,7 @@ We export cleaned and analyzed data into CSV format for further exploration and 
 
 ## Interactive Visualizations
 
-- Explore the interactive [PowerBI report](https://app.powerbi.com/view?r=eyJrIjoiNGMzOTk5NTEtMDRhNS00MWE2LWI2ZjUtYzQ3ZWI0ZGU2MGZmI).
+- Explore the interactive [PowerBI report](https://app.powerbi.com/view?r=eyJrIjoiNGMzOTk5NTEtMDRhNS00MWE2LWI2ZjUtYzQ3ZWI0ZGU2MGZmIiwidCI6IjhhZWJkZGI2LTM0MTgtNDNhMS1hMjU1LWI5NjQxODZlY2M2NCIsImMiOjl9).
 
 - Visit the [Streamlit web application](https://berlin-airbn.streamlit.app/) for an additional interactive experience.
 
