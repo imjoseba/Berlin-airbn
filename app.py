@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from pycaret.regression import load_model, predict_model
 
-model = load_model("ml_airbnb")
+model = load_model("ml_airbnb_xgb")
 st.title("Vacation rental prediction system based on Airbnb dataset")
 
 neighbourhood = st.selectbox('Neighbourhood', options=[
